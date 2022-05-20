@@ -9,7 +9,81 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <main class="bg-primary">
+
+        <div class="section">
+            <h2 class="text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="container bg-white rounded box-shadow py-4">
+                <div class="row justify-content-md-center pb-5">
+                    <div class="col-3">
+                        <div class="text-center">
+                            <label for="nomeUtente" class="text-primary mb-3">Nome Cognome</label>
+                            <input class="rounded " type="text" placeholder="Nome" name="nomeUtente">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="text-center">
+                            <label for="kmUtente" class="text-primary mb-3">Km da percorrere</label>
+                            <input class="rounded" type="number" placeholder="Km" name="kmUtente">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="text-center">
+                            <label for="etaUtente" class="text-primary mb-3">Fascia d'età</label>
+                            <select class="rounded" name="etaUtente">
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" id="genera-biglietto" class="mx-2 rounded text-primary fw-bold">Genera</button>
+                    <button type="button" id="annulla-biglietto" class="mx-2 rounded text-primary fw-bold">Annulla</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="container-biglietto" class="d-none">
+                <h2 class="text-white text-center">IL TUO BIGLIETTO</h2>
+                <div class="container bg-white pb-3">
+                    <div class="pt-3">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                    </div>
+
+                    <div class="row border-top border-bottom my-3">
+                        <div class="col">
+                            <div class="bg-secondary p-3">
+                                <h4>NOME PASSEGGERO</h4>
+                                <div class="fw-bold" id="nome-utente"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="pb-5">Offerta</h6>
+                            <div id="offerta"></div>
+                        </div>
+                        <div class="col">
+                            <h6 class="pb-5">Carrozza</h6>
+                            <div id="carrozza"></div>
+                        </div>
+                        <div class="col">
+                            <h6 class="pb-5">Codice CP</h6>
+                            <div id="codice-cp"></div>
+                        </div>
+                        <div class="col">
+                            <h6 class="pb-5">Costo biglietto</h6>
+                            <div id="costo-biglietto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <script src="js/main.js"></script>
 </body>

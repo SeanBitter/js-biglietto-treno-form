@@ -1,0 +1,12 @@
+:root {
+    --bs-primary: #B91450;
+    --bs-primary-rgb: 185, 20, 80;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.box-shadow {
+    box-shadow: 0 0 5px 0;
+}
